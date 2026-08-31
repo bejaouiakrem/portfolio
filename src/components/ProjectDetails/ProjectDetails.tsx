@@ -1,5 +1,5 @@
 import { projects } from '../../data/projects';
-import { ArrowLeft, Github, ExternalLink } from 'lucide-react';
+import { ArrowLeft, Github } from 'lucide-react';
 
 interface ProjectDetailsProps {
   projectId: string;
@@ -46,17 +46,7 @@ const ProjectDetails = ({ projectId, onBack }: ProjectDetailsProps) => {
               Code
             </a>
           )}
-          {project.liveUrl && (
-            <a
-              href={project.liveUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 px-4 py-2 bg-[#3b82f6] text-white rounded-lg hover:bg-[#2563eb] transition-colors"
-            >
-              <ExternalLink size={18} />
-              Live Demo
-            </a>
-          )}
+          
         </div>
       </div>
 

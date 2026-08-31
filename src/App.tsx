@@ -16,11 +16,11 @@ function App() {
       <main>
         <Hero />
         <About />
+        <KubernetesPortfolioLink />
         <Skills />
         <Projects />
         <Certifications />
         <Journey />
-        <KubernetesPortfolioLink />
         <Contact />
       </main>
       <Footer />
